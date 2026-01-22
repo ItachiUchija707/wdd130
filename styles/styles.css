@@ -53,13 +53,14 @@ aside img {
 aside {
     width: 1580px;
     text-align: left;
+    position: relative;
 }
 
 aside h2 {
     position: absolute;
     left: 7%;
     transform: translateX(-50%);
-    top: 50.5%;
+    top: 15.5%;
 }
 
 footer {
