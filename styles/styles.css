@@ -1,9 +1,14 @@
+:root {
+--main-color: darkblue;
+--borders-px: 1px;
+}
+
 main {
     max-width: 840px;
 }
 
 nav{
-    background-color: darkblue;
+    background-color: var(--main-color);
     padding:10px;
 }
 nav a {
@@ -12,13 +17,13 @@ nav a {
     padding:20px;
 }
 h1 {
-    color: darkblue;
+    color: var(--main-color);
 }
 
 img{
     width:150px;
     height: auto;
-    border: 1px solid black;
+    border: var(--borders-px) solid black;
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
@@ -28,7 +33,7 @@ p {padding: 0px}
 main img {
     width: 250px;
     height: auto;
-    border: 1px;
+    border: var(--borders-px);
     padding: 1em;
     box-shadow: 10px 5px 5px orange;
 }
@@ -41,7 +46,7 @@ aside img {
 aside {
     width: 1580px;
     margin: 1px;
-    border: 1px;
+    border: var(--borders-px);
     padding: 1rem;
     background-color: rgb(243, 242, 248);
     color:black
