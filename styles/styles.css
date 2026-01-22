@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
 :root {
 --main-color: darkblue;
 --borders-px: 1px;
@@ -14,7 +20,7 @@ nav{
 nav a {
     color: white;
     display: block;
-    padding:20px;
+    padding:auto;
 }
 h1 {
     color: var(--main-color);
@@ -36,6 +42,7 @@ main img {
     border: var(--borders-px);
     padding: 1em;
     box-shadow: 10px 5px 5px orange;
+    float: right;
 }
 
 aside img {
@@ -45,15 +52,30 @@ aside img {
 
 aside {
     width: 1580px;
-    margin: 1px;
-    border: var(--borders-px);
-    padding: 1rem;
-    background-color: rgb(243, 242, 248);
-    color:black
+    text-align: left;
+}
+
+aside h2 {
+    position: absolute;
+    left: 7%;
+    transform: translateX(-50%);
+    top: 50.5%;
 }
 
 footer {
     margin-top: 1em;
     border-top: 5px solid #624aa9;
-    text-align: center;
+    text-align: left;
+    padding-top: 1%;
 }
+
+/* comment header section */
+
+.box {
+    margin: 1rem;
+    border: 1px rgb(204, 20, 20);
+    padding: 1rem;
+    background-color: white;
+    color:rgb(220, 228, 228)
+}
+
