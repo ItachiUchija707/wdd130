@@ -19,7 +19,7 @@ body {
 }
 
 header, main, footer {
-    width: 840;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -66,10 +66,11 @@ nav, p, section, article {
     color: #fff;
 }
 
-article {
+.hero article {
     position: absolute;
     top: 12%;
-    width: 95%;
+    width: 100%;
+    margin-left: 0%;
     padding: 0;
     color: var(--secondary-color);
     background-color: var(--accent-color1);
