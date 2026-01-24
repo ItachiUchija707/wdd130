@@ -26,7 +26,7 @@ header, main, footer {
 
 h2 {
     font-family: var(--heading-font);
-    color: var(--primary-color);
+    color: var(--secondary-color);
     text-align: center;
     background-color: var(--accent-color1);
     opacity: 0.6;
@@ -72,7 +72,7 @@ nav, p, section, article {
     width: 100%;
     margin-left: 0%;
     padding: 0;
-    color: var(--secondary-color);
+    color: white;
     background-color: var(--accent-color1);
     opacity: 0.8;
     text-align: left;
