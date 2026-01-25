@@ -26,9 +26,9 @@ header, main, footer {
 
 h2 {
     font-family: var(--heading-font);
-    color: var(--primary-color);
+    color: var(--accent-color2);
     text-align: center;
-    background-color: var(--accent-color2);
+    background-color: var(--secondary-color);
     opacity: 0.6;
     width: 100%;
     padding: 16px;
@@ -38,7 +38,7 @@ h2 {
 nav, p, section, article {
     margin: 16px;
     padding: 16px;
-    color: white;
+    color: var(--accent-color2);
 }
 
 .socialmedia a {
