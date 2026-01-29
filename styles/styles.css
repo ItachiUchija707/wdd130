@@ -5,78 +5,128 @@
 }
 
 :root {
---main-color: darkblue;
+--main-color: steelblue;
 --borders-px: 1px;
 }
 
-main {
-    max-width: 840px;
+
+header, .grid, footer {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-nav{
+nav {
+   background-color: steelblue;
+   padding: 1rem;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+}
+
+nav a {
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+main {
+    max-width: auto;
+    grid-column: 2/3;
+    margin: 1rem;
+    color:black;
+    margin-top: 10%;
+}
+
+main img {
+    width: 300px;
+    height: auto;
+    border: var(--borders-px);
+    padding: 1em;
+    float: right;
+    margin: 1rem 0 1rem;
+}
+
+h1 {
+    border-bottom: 1px solid #222;
+    color: black;
+}
+
+nav {
     background-color: var(--main-color);
     padding:10px;
 }
-nav a {
-    color: white;
-    display: block;
-    padding:0;
-}
+
 h1 {
     color: var(--main-color);
+    text-align: center;
 }
 
-img{
-    width:150px;
+img {
+    width:200px;
     height: auto;
     border: var(--borders-px) solid black;
     padding: 2px;
     box-shadow: 0 0 30px gray;
 }
 
-p {padding: 0px}
-
-main img {
-    width: 250px;
-    height: auto;
-    border: var(--borders-px);
-    padding: 1em;
-    box-shadow: 10px 5px 5px orange;
-    float: right;
+p {
+    padding: 1rem;
+    color: black;
+    background-color: beige;
 }
 
 aside img {
-    width: 200px;
+    width: 300px;
     height: auto;
 }
 
 aside {
-    width: 1580px;
+    width: auto;
     text-align: left;
     position: relative;
+    grid-row: 1/2;
+    color: black;
 }
 
 aside h2 {
     position: absolute;
-    left: 7%;
+    left: 30%;
     transform: translateX(-50%);
-    top: 15.5%;
+    top: 5%;
+    color: white;
 }
 
 footer {
-    margin-top: 1em;
-    border-top: 5px solid #624aa9;
+    border-top: 5px solid #e30a5a;
     text-align: left;
     padding-top: 1%;
+    background-color: var(--main-color);
+    margin: 2rem auto;
+    color: white;
 }
 
 /* comment header section */
 
 .box {
     margin: 1rem;
-    border: 1px rgb(204, 20, 20);
+    border: 1px rgb(20, 204, 161);
     padding: 1rem;
-    background-color: white;
-    color:rgb(220, 228, 228)
+    color:rgb(220, 228, 228);
 }
+
+.box li {
+    background-color: gray;
+    padding: 0.5rem;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+}
+
 
