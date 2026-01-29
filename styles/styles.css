@@ -87,7 +87,7 @@ aside {
     width: auto;
     text-align: left;
     position: relative;
-    grid-row: 1/2;
+    grid-row: 1;
     color: black;
 }
 
