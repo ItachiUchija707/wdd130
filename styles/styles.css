@@ -57,6 +57,9 @@ h1 {
 nav {
     background-color: var(--main-color);
     padding:10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 h1 {
