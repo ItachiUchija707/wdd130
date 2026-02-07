@@ -144,19 +144,21 @@ footer p {
 
 /* contact us html styling section */
 
-.information {
-    text-align: center;
-}
-
-.form {
+.completion {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 40px;
+    gap: 25px;
+    padding: 0;
+}
+
+.contact-details {
+    text-align: center;
+    color: #f3f3f3;
     padding: 50px;
 }
 
-.info {
-    grid-template-rows: 1fr 1fr;
+.contact-details h1 {
+    color: var(--accent-color2);
 }
 
 .employees {
@@ -174,8 +176,8 @@ fieldset {
     padding: 10px;
     background-color: #242020;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    gap: 1.25rem;
+    grid-template-rows: 1fr 1fr;
+    gap: .8rem;
 }
 
 legend {
@@ -187,16 +189,41 @@ legend {
 input[type="checkbox"] {
     height: 25px;
     width: 25px;
+    margin-left: 5px;
 }
 
+.message {
+    display: inline-block;
+}
 
+.message, textarea {
+    width: 100%; 
+}
 
+.reason {
+    display: grid;
+    grid-template-columns: 20px 1fr 20px 1fr 20px 1fr;
+    gap: 1em;
+    border-radius: 10px;
+    margin: 5px 0 0 0;
+    padding-bottom: 60px;
+    height: 0px;
+}
 
-/* input:focus,
-select:focus,
-textarea:focus {
-    font-size: 1.25em;
-    margin: 5px 0;
-    padding: 5px;
-    width: 100%;
-} */
+button {
+    padding: 7px;
+    margin: 0px 20px 0px 20px;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: var(--accent-color2);
+}
+
+.details {
+    display: inline-block;
+    padding-right: 0px;
+}
+
+.details input {
+    padding: 5px 35px 5px 0px;
+    margin-top: 20px;
+}

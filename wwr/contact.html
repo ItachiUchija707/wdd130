@@ -19,42 +19,43 @@
         </nav>
     </header>
     <main>
-        <div class="contact information">
+        <div class="contact-details">
             <h1>White Water Rafting Company</h1>
-            <p>123 Main River Street</p>
-            <p>Kolob, California</p>
-            <p>+ 999 999 9999</p>
-            <p><a href="mailto">info@whitewater.com</a></p>
+            <address>123 Main River Street<br>
+            >Kolob, California<br>
+            + 999 999 9999<br>
+            <a href="mailto">info@whitewater.com</a></address>
         </div>
 
-        <div class="form">
+        <div class="completion">
             <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7709.83730175585!2d-88.03498791058946!3d14.941624904984566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2shn!4v1770476585887!5m2!1ses!2shn" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3854.9400369054392!2d-88.03402613840608!3d14.940433731451721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f65d737c1c7eceb%3A0x3f3ed2a96a517b68!2sPuente%20Colgante%20Parque%20Arqueol%C3%B3gico%20Los%20Naranjos!5e0!3m2!1sen!2shn!4v1770497016184!5m2!1sen!2shn" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
-            
             <form action="#">
-                <!-- <fieldset> -->
-                    <div class="user">
+                <fieldset>
+                    <fieldset class="user details">
                         <label for="name">Name: </label>
-                        <input type="text" id="name" name="name" required>
+                        <input type="text" id="name" name="name" placeholder="First/Last Name" required>
                         <label for="email">Email: </label>
-                        <input type="text" id="email" name="email" required>
-                    </div>
+                        <input type="text" id="email" name="email" placeholder="youremail@email.com" required>
+                    </fieldset>
                     <fieldset class="contact reason"> 
                         <legend>Message Reason</legend>
-                        <input type="radio" id="inquiry" name="inquiry" value="General Inquiry">
+                        <input type="radio" id="inquiry" name="inquiry" value="General Inquiry" checked>
                         <label for="inquiry">General Inquiry</label>
                         <input type="radio" id="reservation" name="reservation" value="Reservation Question">
                         <label for="reservation">Reservation Question</label>
                         <input type="radio" id="suggestion" name="suggestion" value="Website Reservation">
                         <label for="suggestion">Website Suggestion</label>
                     </fieldset>
-                    <label for="message">Message</label>
-                    <textarea name="message" id="message" rows="5" required></textarea>
+                    <fieldset class="message">
+                        <legend>Message</legend>
+                        <textarea name="message" id="message" rows="5" placeholder="Type here" required></textarea>
+                    </fieldset>
                     <label for="subscription">Please sucribe me to the monthly newsletter</label>
-                    <input type="checkbox" id="subscription" name="subscription">
-                    <button>Get in Touch!</button>
-                <!-- </fieldset> -->
+                    <input type="checkbox" id="subscription" name="subscription" checked>
+                    <button type="submit">Get in Touch!</button>
+                </fieldset>
             </form>
         </div>
         <section class="employees">
@@ -64,7 +65,7 @@
                 <figcaption>Tom - The rafting master</figcaption>
             </figure>
             <figure>
-                <img src="images/Iila-CS.jpg" alt="Lila, one of our customer service agents happily helping one of our customers">
+                <img src="images/Iila-css.jpg" alt="Lila, one of our customer service agents happily helping one of our customers">
                 <figcaption>Lila - Customer Service Expert</figcaption>
             </figure>
             <figure>
